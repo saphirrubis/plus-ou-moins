@@ -10,6 +10,7 @@ messageP = document.querySelector(".message"),
 guess = document.querySelector(".gameZone input"),
 submit = document.querySelector(".gameZone button");
 
+//function du commencement
 function start(){
     turn = 0;
     answer.textContent = "?";
@@ -20,6 +21,7 @@ function start(){
     guess.disabled = false;
     submit.disabled = false;
 }
+// fonction de fin de jeu
 function endOfGame(win){
 if(win){
     messageP.textContent = `Bien joué ! vous avez trouvé en ${turn} tours.`;
@@ -34,6 +36,7 @@ card.classList.add("reveal");
 guess.disabled = true;
 submit.disabled = true;
 }
+// fonction du choix du joueur
 function check(){
 let nb = parseInt(guess.value);
 messageP.style.textShadow = badShadow;

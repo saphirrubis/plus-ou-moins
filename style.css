@@ -1,12 +1,12 @@
-@font-face {
-    font-family: great;
-    src: url(./FrederickatheGreat-Regular.ttf);
-  }
 *, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: great;
+    src: url(./FrederickatheGreat-Regular.ttf);
+  }
 body,
 .card .front,
 .gameZone {
